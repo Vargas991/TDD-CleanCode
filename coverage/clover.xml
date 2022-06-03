@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1654274944222" clover="3.2.0">
-  <project timestamp="1654274944222" name="All files">
-    <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4" elements="9" coveredelements="9" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
+<coverage generated="1654276136584" clover="3.2.0">
+  <project timestamp="1654276136584" name="All files">
+    <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="10" elements="22" coveredelements="22" complexity="0" loc="12" ncloc="12" packages="1" files="2" classes="2"/>
     <file name="food-model.ts" path="C:\Users\Edderson\Documents\KunaiSoft\cursos\TDD-CleanCode\src\models\food-model.ts">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
       <line num="3" count="1" type="stmt"/>
@@ -9,6 +9,16 @@
       <line num="8" count="1" type="stmt"/>
       <line num="11" count="1" type="stmt"/>
       <line num="14" count="1" type="stmt"/>
+    </file>
+    <file name="vehicle-model.ts" path="C:\Users\Edderson\Documents\KunaiSoft\cursos\TDD-CleanCode\src\models\vehicle-model.ts">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
