@@ -5,9 +5,10 @@ describe('Classes Food ',()=>{
         const food = new Food({
                 name: 'Pollo',
                 description: 'Pollo frito', 
-                price:30
+                price: 30
             })
-
+        
+        expect(food.getFood()).toEqual(food)
         expect(food.getName()).toEqual('Pollo')
         expect(food.getDescription()).toEqual('Pollo frito')
         expect(food.getPrice()).toBe(30)

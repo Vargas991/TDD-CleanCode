@@ -1,9 +1,12 @@
 import { FoodHelper } from "../helpers/food-model.helper"
 
-export class Food{
+export class Food {
 
-    constructor(private readonly foodHelper: FoodHelper){}
+    constructor(private readonly foodHelper: FoodHelper) { }
 
+    getFood(): any {
+        return Object.assign(this,this.foodHelper)
+    }
     getName(): string {
         return this.foodHelper.name
     }
