@@ -1,3 +1,4 @@
+import { InvalidArgument } from "../errors/invalid-arg"
 import { UrlLogin, UrlUser } from "../protocols/protocols-http"
 
 describe('protocols http en Querys', () => {
@@ -24,14 +25,21 @@ describe('protocols http en Querys', () => {
         expect(parseUrl.href).toBe('http://localhost:3000/user')
     })
     test('Reponse Query User', () => {
-        const parseUrl = UrlUser.parseUrl('http://localhost:3000/user?user=user&password=password&name=name&lastname=lastname')
+        const parseUrl = UrlUser.parseUrl ('http://localhost:3000/user?user=user&password=password&name=name&lastname=lastname')
         const expectUser = {
             user: 'user',
             password: 'password',
             name: 'name',
             lastname: 'lastname'
         }
-        
+
         expect(parseUrl.query).toEqual(expectUser)
+    })
+
+    test('Invalid Url', () => {
+        function expectError():void{
+            UrlLogin.parseUrl('')
+        }
+        expect(expectError).toThrowError(new InvalidArgument(''))
     })
 })
